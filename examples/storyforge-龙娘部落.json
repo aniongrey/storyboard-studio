@@ -1,0 +1,1785 @@
+{
+  "title": "F级废物？我在禁区建立龙娘部落",
+  "genre": "荒野求生 / 部落经营 / 逆袭 / 群像短剧",
+  "logline": "被判定为F级废物的陆野在禁区建立龙娘部落，用可核对的劳动规则，把一个个被旧秩序丢掉的人接回来。",
+  "theme": "真正的公平不是分得多，而是每个人都能看见账是怎么算的。",
+  "aspectRatio": "9:16",
+  "episodeCount": 30,
+  "world": {
+    "tone": "冷峻的生存压力下，保留一点不肯灭的火光",
+    "rules": "1. 原猎团按F级评定分配口粮，评定由团长与副团长共同签字。\n2. 灾季物资由副团长苏媚统一记账，账册不公开。\n3. 龙娘与人可以建立生命共鸣，但必须出于自愿，不能强制觉醒。\n4. 高地部落按工数分饭：伤员优先，其余按当日工数记账。\n5. 入营不看出身，只看是否愿意按规矩劳动；账目公开，想走随时结清。"
+  },
+  "style": "写实自然光短剧质感，森林、山地、溪流与营地采用真实自然环境参考；人物保留当前角色资产的面部、发型、服装与比例。原猎团营地偏冷调、潮湿、木栅与湿粮；高地火塘营地偏暖黄火光与蒸汽。镜头克制，少用炫技运镜，情绪靠停顿、手部动作和账册、工签、粮袋这些可核对的道具推进。9:16 竖屏，电影感构图，高细节。",
+  "cast": [
+    {
+      "id": "cast_luye",
+      "name": "陆野",
+      "role": "主角 / 高地建立者",
+      "faction": "高地部落",
+      "voice": "低沉、短句、先问后答",
+      "traits": [
+        "克制",
+        "务实",
+        "守约",
+        "不解释自己"
+      ],
+      "desire": "用可核对的劳动规则建立一个不必证明自己不是废物的聚落。",
+      "fear": "自己的善意被当成另一种施舍。",
+      "description": "二十多岁，黑色短发被雨打湿后贴在额角，旧皮甲上有多处缝补，右手虎口有长期握刀的茧。被放逐时只带走一把缺口刀。",
+      "visualPrompt": "young male hunter in worn patched leather armor, short wet black hair, sharp calm eyes, scarred hands, carries a notched knife, grounded and restrained presence, realistic forest survival drama, cinematic natural light",
+      "promptAlias": "young hunter, worn leather armor, notched knife, calm restrained gaze",
+      "seedPrompt": "[CHARACTER:陆野] young hunter, worn leather armor, short black hair, notched knife, calm eyes, realistic forest drama, consistent appearance",
+      "color": "#8a6a4f"
+    },
+    {
+      "id": "cast_qingyu",
+      "name": "青羽",
+      "role": "龙娘 / 高地第一位伙伴",
+      "faction": "高地部落",
+      "voice": "偏冷、句子短、情绪藏在尾音里",
+      "traits": [
+        "警觉",
+        "骄傲",
+        "护短",
+        "不肯示弱"
+      ],
+      "desire": "被当成平等的伙伴，而不是被拯救的对象。",
+      "fear": "新的伙伴取代她的位置。",
+      "description": "青灰色鳞片的龙娘，翅尖有一道旧伤，左腕戴着用兽筋编的护带。人形时穿深青色粗布短衣，赤足，走路几乎没有声音。",
+      "visualPrompt": "dragon girl with pale blue-grey scales, old scar on wing tip, deep teal rough cloth short tunic, barefoot, alert proud eyes, subtle protective stance, realistic fantasy survival drama, cinematic natural light",
+      "promptAlias": "blue-grey scaled dragon girl, teal tunic, scarred wing, alert proud gaze",
+      "seedPrompt": "[CHARACTER:青羽] dragon girl, pale blue-grey scales, teal tunic, scarred wing, proud alert eyes, consistent appearance",
+      "color": "#5b7d86"
+    },
+    {
+      "id": "cast_jiaojiao",
+      "name": "角角",
+      "role": "幼龙 / 后勤与账目",
+      "faction": "高地部落",
+      "voice": "快、直、带一点赖皮的尾音",
+      "traits": [
+        "机灵",
+        "贪吃",
+        "算得清",
+        "护食"
+      ],
+      "desire": "每天有稳定的饭，和一本谁都能看的账。",
+      "fear": "储备见底，大家又要饿肚子。",
+      "description": "只到陆野腰高的幼龙，土黄色鳞片，头顶一对还没长硬的角，脖子上挂着用木片刻的账签。",
+      "visualPrompt": "small ochre-scaled baby dragon, short unformed horns, wooden tally tags on a cord around neck, clever hungry eyes, realistic fantasy survival drama, warm firelight",
+      "promptAlias": "small ochre baby dragon, wooden tally tags, clever hungry eyes",
+      "seedPrompt": "[CHARACTER:角角] small ochre dragon, short horns, wooden tally tags, clever eyes, consistent appearance",
+      "color": "#c08a45"
+    },
+    {
+      "id": "cast_sumei",
+      "name": "苏媚",
+      "role": "反角 / 原猎团副团长",
+      "faction": "原猎团",
+      "voice": "温和、慢、把威胁说成规矩",
+      "traits": [
+        "精于算计",
+        "控制欲强",
+        "擅长程序",
+        "从不亲自动手"
+      ],
+      "desire": "把物资分配权变成任何人都替代不了的权力。",
+      "fear": "账目被公开核对。",
+      "description": "三十岁上下，深赭色长发一丝不乱，袖口永远干净；说话时习惯把账册压在手下。",
+      "visualPrompt": "elegant woman in her thirties, dark auburn hair neatly tied, immaculate sleeves, hand resting on a ledger, gentle controlled smile, realistic survival drama, cold damp camp light",
+      "promptAlias": "auburn-haired woman, immaculate sleeves, hand on ledger, controlled smile",
+      "seedPrompt": "[CHARACTER:苏媚] auburn-haired woman, neat sleeves, ledger, controlled smile, cold camp light, consistent appearance",
+      "color": "#7c4a42"
+    },
+    {
+      "id": "cast_gushuang",
+      "name": "顾霜",
+      "role": "原猎团团长",
+      "faction": "原猎团",
+      "voice": "低、慢、每句话像在签字",
+      "traits": [
+        "守程序",
+        "疲惫",
+        "不肯认错",
+        "护住底线"
+      ],
+      "desire": "让猎团在灾季活下去。",
+      "fear": "承认自己的裁决错了。",
+      "description": "四十岁左右，灰白短发，旧披风上有雨渍，随身带药箱与团长木牌。",
+      "visualPrompt": " weathered woman leader around forty, short grey hair, patched cloak with rain stains, medicine box and wooden leader token, tired steady eyes, realistic survival drama, overcast daylight",
+      "promptAlias": "grey-haired woman leader, patched cloak, medicine box, tired steady eyes",
+      "seedPrompt": "[CHARACTER:顾霜] grey-haired woman leader, patched cloak, medicine box, tired eyes, consistent appearance",
+      "color": "#6f6a5f"
+    },
+    {
+      "id": "cast_chiyu",
+      "name": "赤羽",
+      "role": "原猎团年轻猎手 / 动摇者",
+      "faction": "原猎团",
+      "voice": "冲、直、急起来会重复同一句",
+      "traits": [
+        "好胜",
+        "直率",
+        "认死理",
+        "愿意认错"
+      ],
+      "desire": "靠真本事得到认可。",
+      "fear": "自己一直站错了边。",
+      "description": "十八九岁，赤红短发，猎装袖口磨破，腰上挂着一截记数用的炭笔。",
+      "visualPrompt": "young huntress around eighteen, short crimson hair, frayed hunting sleeves, charcoal tally stick at waist, defiant honest eyes, realistic survival drama, forest daylight",
+      "promptAlias": "crimson-haired young huntress, charcoal tally stick, defiant honest gaze",
+      "seedPrompt": "[CHARACTER:赤羽] crimson-haired young huntress, charcoal tally stick, honest defiant eyes, consistent appearance",
+      "color": "#a14b3c"
+    },
+    {
+      "id": "cast_yeyin",
+      "name": "叶音",
+      "role": "原猎团采集者 / 离团者",
+      "faction": "原猎团 → 高地部落",
+      "voice": "轻、稳、越生气越平静",
+      "traits": [
+        "能忍",
+        "记账清楚",
+        "要体面",
+        "不再轻信"
+      ],
+      "desire": "劳动被当成劳动，而不是被当成恩赐。",
+      "fear": "离开后无处可去。",
+      "description": "二十出头，栗色长发在脑后束成低马尾，采集用的旧布袋洗得发白，工签用细绳挂在颈间。",
+      "visualPrompt": "young woman in her early twenties, chestnut low ponytail, washed-out gathering satchel, wooden work token on a cord, quiet steady eyes, realistic survival drama, natural soft light",
+      "promptAlias": "chestnut ponytail young woman, worn gathering satchel, wooden work token",
+      "seedPrompt": "[CHARACTER:叶音] young woman, chestnut ponytail, worn satchel, wooden work token, steady eyes, consistent appearance",
+      "color": "#9a7a5c"
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc_camp",
+      "code": "A",
+      "name": "原猎团河谷营地",
+      "heading": "EXT. 原猎团河谷营地 - 日/夜",
+      "description": "河谷低地的木栅营地，粮棚倾斜，地面常年潮湿，中央有一张用来公审与分饭的长木台。",
+      "visualPrompt": "riverside hunting camp with crooked wooden palisade, damp ground, central long wooden table, wet grain sacks, cold damp light, realistic survival drama",
+      "seedPrompt": "[SCENE:原猎团河谷营地] wooden palisade, damp ground, long table, wet sacks, cold light",
+      "tone": "冷调、潮湿、压抑"
+    },
+    {
+      "id": "loc_trail",
+      "code": "B",
+      "name": "密林兽径",
+      "heading": "EXT. 密林兽径 - 日/黄昏",
+      "description": "通往高地的兽径，湿雾、兽迹、倒塌的树干，坡顶能看见高地炊烟。",
+      "visualPrompt": "misty forest animal trail, wet ferns, fallen trunks, distant smoke on the ridge, diffused daylight, realistic survival drama",
+      "seedPrompt": "[SCENE:密林兽径] misty trail, wet ferns, fallen trunks, distant smoke",
+      "tone": "湿雾、试探、压低的声音"
+    },
+    {
+      "id": "loc_fire",
+      "code": "C",
+      "name": "高地火塘营地",
+      "heading": "EXT. 高地火塘营地 - 夜",
+      "description": "高地上的石砌火塘与分饭长石，四周是简易木架，火光能照见每个人的碗。",
+      "visualPrompt": "highland campfire circle with stone hearth, long flat stone for dividing food, simple wooden racks, warm firelight against cold night, realistic survival drama",
+      "seedPrompt": "[SCENE:高地火塘] stone hearth, long flat stone, wooden racks, warm firelight",
+      "tone": "暖黄、饥饿、被认真对待"
+    },
+    {
+      "id": "loc_cave",
+      "code": "D",
+      "name": "高地天然洞穴住所",
+      "heading": "INT. 高地天然洞穴 - 夜",
+      "description": "天然岩洞，岩壁下有分区储存的粮袋与工具，洞口能听见风声。",
+      "visualPrompt": "natural rock cave shelter, partitioned storage of grain sacks and tools along the wall, wind at the entrance, dim firelight, realistic survival drama",
+      "seedPrompt": "[SCENE:高地洞穴] rock shelter, partitioned grain sacks, tools, dim firelight",
+      "tone": "岩壁、低声、火塘余烬"
+    },
+    {
+      "id": "loc_edge",
+      "code": "G",
+      "name": "龙娘部落外围",
+      "heading": "EXT. 龙娘部落外围 - 日",
+      "description": "新修的栅栏、饭棚与一块刻着规则的木牌，地面还有未干的水沟。",
+      "visualPrompt": "newly built palisade and food shelter, wooden rule board, unfinished drainage ditch, bright natural daylight, realistic survival drama",
+      "seedPrompt": "[SCENE:部落外围] new palisade, food shelter, rule board, unfinished ditch",
+      "tone": "白天、泥土、被承认的疲惫"
+    },
+    {
+      "id": "loc_hunt",
+      "code": "H",
+      "name": "林间猎场",
+      "heading": "EXT. 林间猎场 - 日",
+      "description": "原猎团的猎场，陷阱与兽夹沿坡布置，树干上有旧标记。",
+      "visualPrompt": "forest hunting ground with traps and snares along the slope, old marks on tree trunks, dappled daylight, realistic survival drama",
+      "seedPrompt": "[SCENE:林间猎场] traps, snares, marked trunks, dappled daylight",
+      "tone": "安静、危险、等待"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "goal_banish",
+      "episode": 1,
+      "title": "陆野被当众放逐",
+      "detail": "原猎团公审把陆野的F级评定固定为公开事实，他带着一把缺口刀离开。",
+      "lock": "hard",
+      "leadId": "cast_luye",
+      "mechanism": "利益与规则冲突"
+    },
+    {
+      "id": "goal_confiscate",
+      "episode": 6,
+      "title": "苏媚第一次合规没收叶音所得",
+      "detail": "叶音用劳动换来的肉被以“来源不明”整袋没收，程序上无可指摘。",
+      "lock": "soft",
+      "leadId": "cast_yeyin",
+      "mechanism": "利益与规则冲突"
+    },
+    {
+      "id": "goal_punish",
+      "episode": 15,
+      "title": "赤羽被罚，并看见另一种分法",
+      "detail": "赤羽夜探高地被抓后判苦役，在高地亲眼看见按工数公开分饭。",
+      "lock": "hard",
+      "leadId": "cast_chiyu",
+      "mechanism": "误会与信任崩塌"
+    },
+    {
+      "id": "goal_leave",
+      "episode": 19,
+      "title": "叶音当众交还工签",
+      "detail": "叶音不是被赶走，而是当众说明自己不再接受这套分配，主动离开。",
+      "lock": "hard",
+      "leadId": "cast_yeyin",
+      "mechanism": "利益与规则冲突"
+    },
+    {
+      "id": "goal_arrive",
+      "episode": 20,
+      "title": "叶音拿到“自愿留下”的资格",
+      "detail": "她先谈清工数、分饭与离开的条件，再跨进高地营门。",
+      "lock": "soft",
+      "leadId": "cast_yeyin",
+      "mechanism": "保护他人的两难"
+    },
+    {
+      "id": "goal_expose",
+      "episode": 28,
+      "title": "苏媚的储粮与诱饵计划暴露",
+      "detail": "赤羽用双结封绳、诱饵袋与账册完成可核对的证据链，顾霜当众核对。",
+      "lock": "hard",
+      "leadId": "cast_chiyu",
+      "mechanism": "伏笔回收"
+    },
+    {
+      "id": "goal_rules",
+      "episode": 30,
+      "title": "部落把规则刻上木牌",
+      "detail": "入营、工数、分饭、离开四条规则成文，陆野不再是唯一的解释者。",
+      "lock": "open",
+      "leadId": "cast_luye",
+      "mechanism": "自由探索"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node_ep01_banish",
+      "code": "N01",
+      "episode": 1,
+      "order": 0,
+      "status": "confirmed",
+      "title": "放逐裁决",
+      "goal": "把陆野的F级变成所有人都不用再讨论的结论，同时让苏媚拿到粮账的完全处置权。",
+      "preconditions": [
+        "陆野的狩猎成绩连续三季被记为F级",
+        "苏媚掌握灾季粮账"
+      ],
+      "actors": [
+        "cast_luye",
+        "cast_sumei",
+        "cast_gushuang"
+      ],
+      "motive": "苏媚需要一个公开的失败者，证明资源集中在她手里才安全；顾霜要用一次裁决稳住灾前的秩序。",
+      "action": "公审在河谷营地中央进行。苏媚把三季账目摊开，只念陆野未完成的部分；顾霜按规矩宣布放逐，人群沉默，没有人替陆野说话。",
+      "result": "陆野被当众放逐，只带走一把缺口刀；苏媚获得粮账的完全解释权，F级成为公开标签。",
+      "stateChanges": [
+        "陆野失去原猎团身份与配给",
+        "苏媚获得粮账的完全解释权",
+        "顾霜的裁决被当众固定下来"
+      ],
+      "foreshadow": "账册被撕掉的一角，还粘在苏媚的袖口。",
+      "beats": [
+        "苏媚把账册拍在木台上，先念陆野的名字",
+        "顾霜问有没有人反对，人群沉默",
+        "陆野把工签放在台上，转身走进雨里"
+      ],
+      "tone": "冷、湿、克制的屈辱感",
+      "locationId": "loc_camp",
+      "outcomeId": "goal_banish",
+      "debtIds": [
+        "debt_sumei",
+        "debt_grade"
+      ],
+      "dialogue": [
+        {
+          "characterId": "cast_sumei",
+          "line": "三季都是F级，规矩不是我定的。"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "账你留着。刀我带走。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_luye",
+          "level": "knows",
+          "subject": "自己被判F级的全部账目",
+          "learnedAt": "node_ep01_banish"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "账目可能有缺页",
+          "learnedAt": "node_ep01_banish"
+        },
+        {
+          "characterId": "cast_sumei",
+          "level": "knows",
+          "subject": "粮账的真实结余",
+          "learnedAt": "node_ep01_banish"
+        }
+      ]
+    },
+    {
+      "id": "node_ep02_rescue",
+      "code": "N02",
+      "episode": 2,
+      "order": 0,
+      "status": "confirmed",
+      "title": "密林里的伤者",
+      "goal": "让陆野在失去身份之后做出第一次选择：救一个原本可能追杀他的龙娘。",
+      "preconditions": [
+        "陆野已经被原猎团放逐"
+      ],
+      "actors": [
+        "cast_luye",
+        "cast_qingyu"
+      ],
+      "motive": "陆野要证明F级不是他判断别人价值的依据；青羽要先确认这个人会不会补刀。",
+      "action": "雨里的兽径上，青羽被兽夹咬住翅膀。陆野先把刀踢远，再空手解开铁齿，用自己的口粮换一次靠近的机会。",
+      "result": "青羽允许陆野靠近并接受包扎，两人建立第一次出于自愿的触碰。",
+      "stateChanges": [
+        "青羽从敌意转为警戒性信任",
+        "陆野得到第一个愿意听他说话的伙伴",
+        "陆野的口粮减少一半"
+      ],
+      "foreshadow": "兽夹上的编号，属于原猎团的旧工具。",
+      "beats": [
+        "兽径尽头传来铁齿合拢的声音",
+        "陆野把刀踢远，空手走近",
+        "青羽的翅尖第一次没有躲开"
+      ],
+      "tone": "雨、血、极轻的呼吸声",
+      "locationId": "loc_trail",
+      "dialogue": [
+        {
+          "characterId": "cast_qingyu",
+          "line": "你为什么不怕我？"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "怕。但你先受伤了。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_qingyu",
+          "level": "partial",
+          "subject": "陆野没有杀意",
+          "learnedAt": "node_ep02_rescue"
+        },
+        {
+          "characterId": "cast_luye",
+          "level": "partial",
+          "subject": "青羽能听懂人话",
+          "learnedAt": "node_ep02_rescue"
+        }
+      ]
+    },
+    {
+      "id": "node_ep03_fire",
+      "code": "N03",
+      "episode": 3,
+      "order": 0,
+      "status": "confirmed",
+      "title": "第一顿熟食",
+      "goal": "把“活下去”具体化成一顿饭，让青羽第一次看见劳动与分配的雏形。",
+      "preconditions": [
+        "青羽接受陆野的包扎"
+      ],
+      "actors": [
+        "cast_luye",
+        "cast_qingyu",
+        "cast_jiaojiao"
+      ],
+      "motive": "陆野要让青羽明白，跟着他不是被养着，而是一起把日子过起来。",
+      "action": "陆野用缺口刀处理猎物，青羽守着火，角角从石缝里探头。三个人分第一锅肉汤，先给伤者，再给干活的人。",
+      "result": "高地第一次有了稳定的火塘，也第一次出现“先给伤者、再按劳动分”的分法。",
+      "stateChanges": [
+        "青羽开始把高地当成可以停留的地方",
+        "角角记住了分食的顺序"
+      ],
+      "foreshadow": "角角把骨头收进石缝，像在存什么。",
+      "beats": [
+        "火苗第一次在湿柴上站稳",
+        "青羽把最大的那块推回锅里",
+        "角角从石缝里探出头，只问了一句饭在哪"
+      ],
+      "tone": "暖、饿、第一次像家的安静",
+      "locationId": "loc_fire",
+      "dialogue": [
+        {
+          "characterId": "cast_jiaojiao",
+          "line": "先给我，我小。"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "先给伤者。你排队。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_qingyu",
+          "level": "knows",
+          "subject": "陆野分配食物的顺序",
+          "learnedAt": "node_ep03_fire"
+        },
+        {
+          "characterId": "cast_jiaojiao",
+          "level": "partial",
+          "subject": "这里的饭要排队",
+          "learnedAt": "node_ep03_fire"
+        }
+      ]
+    },
+    {
+      "id": "node_ep04_smoke",
+      "code": "N04",
+      "episode": 4,
+      "order": 0,
+      "status": "confirmed",
+      "title": "兽径上的炊烟",
+      "goal": "让叶音第一次看见高地的炊烟，为“退路”埋下可回收的视觉线索。",
+      "preconditions": [
+        "高地有了稳定的火塘"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_sumei"
+      ],
+      "motive": "叶音想确认那个被放逐的人是不是真的活下来了；苏媚要确认有没有人私下接济他。",
+      "action": "叶音在兽径高处看见高地的炊烟，回营时只说没找到东西。苏媚闻了闻她袖口的烟味，没有当场拆穿，只改了采集路线。",
+      "result": "叶音知道高地还活着，苏媚知道叶音在撒谎。",
+      "stateChanges": [
+        "叶音第一次对原猎团隐瞒",
+        "苏媚把叶音列入需要盯防的人"
+      ],
+      "foreshadow": "苏媚没有当场拆穿，只把叶音的采集路线改到了粮棚附近。",
+      "beats": [
+        "叶音在坡顶停下，看见一缕直上的白烟",
+        "她把手里的野果倒掉一半",
+        "回营时苏媚问：今天怎么这么晚"
+      ],
+      "tone": "试探、沉默、山雾",
+      "locationId": "loc_trail",
+      "dialogue": [
+        {
+          "characterId": "cast_sumei",
+          "line": "烟味不是你该带回来的。"
+        },
+        {
+          "characterId": "cast_yeyin",
+          "line": "我绕了远路。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "高地有人在生活",
+          "learnedAt": "node_ep04_smoke"
+        },
+        {
+          "characterId": "cast_sumei",
+          "level": "partial",
+          "subject": "叶音去过高地附近",
+          "learnedAt": "node_ep04_smoke"
+        }
+      ]
+    },
+    {
+      "id": "node_ep06_confiscate",
+      "code": "N05",
+      "episode": 6,
+      "order": 0,
+      "status": "confirmed",
+      "title": "按规矩没收",
+      "goal": "用一次完全合规的没收，让叶音第一次意识到规矩可以只对弱者生效。",
+      "preconditions": [
+        "叶音看见高地的炊烟",
+        "苏媚获得粮账的完全解释权"
+      ],
+      "actors": [
+        "cast_sumei",
+        "cast_yeyin",
+        "cast_gushuang"
+      ],
+      "motive": "苏媚要杀鸡儆猴：任何绕过分配权的交易，都会被收回。",
+      "action": "叶音用一天采集换来的肉刚进营，苏媚以来源不明为由整袋没收，只给回一张工签；顾霜按规矩签字。",
+      "result": "叶音的劳动所得被合规没收，工签上多了一条来源不明。",
+      "stateChanges": [
+        "叶音对分配规则的信任第一次破裂",
+        "苏媚确认这套程序可以反复使用"
+      ],
+      "foreshadow": "顾霜签字时停了一下，最后仍写下名字。",
+      "beats": [
+        "叶音把肉放在台面上，说这是劳动换的",
+        "苏媚只问：谁证明？",
+        "顾霜签字，笔尖在纸上停了一瞬"
+      ],
+      "tone": "公开的羞辱、干燥的木台声",
+      "locationId": "loc_camp",
+      "outcomeId": "goal_confiscate",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "这是我一天换来的。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "规矩不认一天，只认来源。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "没收没有任何证据",
+          "learnedAt": "node_ep06_confiscate"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "程序正确但结论可疑",
+          "learnedAt": "node_ep06_confiscate"
+        },
+        {
+          "characterId": "cast_sumei",
+          "level": "knows",
+          "subject": "肉来自高地",
+          "learnedAt": "node_ep06_confiscate"
+        }
+      ]
+    },
+    {
+      "id": "node_ep08_smell",
+      "code": "N06",
+      "episode": 8,
+      "order": 0,
+      "status": "confirmed",
+      "title": "肉味露馅",
+      "goal": "让叶音的隐瞒第一次被公开戳破，把她推到说谎者的位置。",
+      "preconditions": [
+        "叶音把肉带回营地",
+        "苏媚没收过叶音的食物"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_sumei",
+        "cast_gushuang"
+      ],
+      "motive": "苏媚需要一个证据，把叶音和高地绑在一起。",
+      "action": "搜棚时从叶音床下翻出用叶子包好的熟肉，肉味还没散。叶音说是给伤员留的，苏媚问她为什么伤员不知道。",
+      "result": "叶音被认定为私藏食物，工签被扣，采集路线被收回。",
+      "stateChanges": [
+        "叶音失去最后一点行动自由",
+        "顾霜开始怀疑没收的程序被滥用"
+      ],
+      "foreshadow": "包肉的叶子上，沾着高地火塘特有的白灰。",
+      "beats": [
+        "搜查从粮棚开始，最后停在叶音的床铺",
+        "叶子打开，肉味散出来",
+        "叶音看向顾霜，顾霜移开了眼"
+      ],
+      "tone": "逼问、油烟、越来越低的音量",
+      "locationId": "loc_camp",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "这是给伤员的。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "哪个伤员？名字。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "叶音确实藏了食物",
+          "learnedAt": "node_ep08_smell"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "苏媚在选择性执法",
+          "learnedAt": "node_ep08_smell"
+        },
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "自己已经不被相信",
+          "learnedAt": "node_ep08_smell"
+        }
+      ]
+    },
+    {
+      "id": "node_ep09_watch",
+      "code": "N07",
+      "episode": 9,
+      "order": 0,
+      "status": "confirmed",
+      "title": "守夜的规矩",
+      "goal": "让顾霜亲手执行一次正确但伤人的处罚，为赤羽后来的动摇提供对照。",
+      "preconditions": [
+        "叶音被认定为私藏食物"
+      ],
+      "actors": [
+        "cast_gushuang",
+        "cast_yeyin"
+      ],
+      "motive": "顾霜想用最小的处罚保住规矩的体面；苏媚要叶音在雨里记住谁说了算。",
+      "action": "顾霜罚叶音守三夜粮棚，不给口粮。叶音问守的是粮还是守给谁看，顾霜没有回答。第三夜，粮棚后面有人搬动袋子。",
+      "result": "叶音在雨里守了三夜，顾霜第一次没有睡好；营内有人在夜里搬动粮食。",
+      "stateChanges": [
+        "顾霜对裁决的信心出现裂缝",
+        "叶音不再向营内任何人求助"
+      ],
+      "foreshadow": "第三夜粮棚后面传来拖动重物的声音，叶音没有回头。",
+      "beats": [
+        "顾霜把罚令念完，声音很平",
+        "叶音接过木牌，问了一句被风吹散的话",
+        "第三夜，粮棚后有拖动重物的声音"
+      ],
+      "tone": "雨、木牌、压住的怒气",
+      "locationId": "loc_camp",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "守的是粮，还是守给谁看？"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "line": "守规矩。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "partial",
+          "subject": "营内有人在夜里动粮",
+          "learnedAt": "node_ep09_watch"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "自己可能罚错了人",
+          "learnedAt": "node_ep09_watch"
+        }
+      ]
+    },
+    {
+      "id": "node_ep11_trade",
+      "code": "N08",
+      "episode": 11,
+      "order": 0,
+      "status": "confirmed",
+      "title": "工具换肉",
+      "goal": "让叶音第一次主动为自己找退路，而不是等规矩发善心。",
+      "preconditions": [
+        "叶音被罚后没有口粮"
+      ],
+      "actors": [
+        "cast_luye",
+        "cast_yeyin",
+        "cast_qingyu"
+      ],
+      "motive": "叶音要确认高地是不是另一套恩赐；陆野要确认她是不是只想找个靠山。",
+      "action": "叶音带着原猎团多余的工具摸上高地，提出用工具换肉。陆野不还价，只让她说清工具是谁的；青羽在旁边盯着她的手。收工时按重量当场结清，没有欠条。",
+      "result": "交易成立：工具归高地，肉按重量给叶音，当场结清，没有欠条。",
+      "stateChanges": [
+        "叶音第一次拿到说清楚就能算清的交易",
+        "青羽对叶音保持警戒",
+        "陆野记住叶音没有多拿一块"
+      ],
+      "foreshadow": "青羽看见叶音把最小的一块肉留给了自己。",
+      "beats": [
+        "叶音把工具摊在火塘边，先报数量",
+        "陆野问：这些工具谁签的字",
+        "青羽把称肉的石头推到中间"
+      ],
+      "tone": "交易、火光、克制的善意",
+      "locationId": "loc_fire",
+      "dialogue": [
+        {
+          "characterId": "cast_luye",
+          "line": "工具不是你的，为什么能拿来换？"
+        },
+        {
+          "characterId": "cast_yeyin",
+          "line": "因为它记在我名下，罚也是罚我。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "高地按重量当场结清",
+          "learnedAt": "node_ep11_trade"
+        },
+        {
+          "characterId": "cast_qingyu",
+          "level": "partial",
+          "subject": "叶音不是来占便宜的",
+          "learnedAt": "node_ep11_trade"
+        },
+        {
+          "characterId": "cast_luye",
+          "level": "partial",
+          "subject": "叶音要的是被当成劳动者",
+          "learnedAt": "node_ep11_trade"
+        }
+      ]
+    },
+    {
+      "id": "node_ep12_storage",
+      "code": "N09",
+      "episode": 12,
+      "order": 0,
+      "status": "confirmed",
+      "title": "多出来的粮袋",
+      "goal": "让赤羽第一次看见公开账目和实际储粮不是一回事。",
+      "preconditions": [
+        "营内有人在夜里搬动粮食"
+      ],
+      "actors": [
+        "cast_chiyu",
+        "cast_sumei"
+      ],
+      "motive": "赤羽想证明自己不是只会听话的猎手；苏媚要守住只有自己能解释的应急份额。",
+      "action": "赤羽借换岗清点粮袋，发现账册写三日存粮，棚后却码着七袋封好的粮。苏媚说那是应急份额，不容再问。",
+      "result": "赤羽掌握账实不符的第一手事实，但没有证据证明粮食去向。",
+      "stateChanges": [
+        "赤羽对苏媚的解释存疑",
+        "苏媚开始防着赤羽"
+      ],
+      "foreshadow": "最里面那袋的封绳，是诱饵袋专用的双结。",
+      "beats": [
+        "赤羽用刀背敲了敲最里面的袋子",
+        "封绳是双结，和诱饵袋一样",
+        "苏媚从背后说：那是应急的"
+      ],
+      "tone": "夜、数袋子、被压住的疑问",
+      "locationId": "loc_camp",
+      "debtIds": [
+        "debt_sumei"
+      ],
+      "dialogue": [
+        {
+          "characterId": "cast_chiyu",
+          "line": "账上写三天。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "灾季要留七天，你想让谁饿死？"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "储粮账实不符",
+          "learnedAt": "node_ep12_storage"
+        },
+        {
+          "characterId": "cast_sumei",
+          "level": "partial",
+          "subject": "赤羽看到了封绳",
+          "learnedAt": "node_ep12_storage"
+        }
+      ]
+    },
+    {
+      "id": "node_ep13_sneak",
+      "code": "N10",
+      "episode": 13,
+      "order": 0,
+      "status": "confirmed",
+      "title": "夜探洞口",
+      "goal": "让赤羽的怀疑付出第一次代价，同时把她送进高地内部。",
+      "preconditions": [
+        "赤羽掌握储粮账实不符",
+        "赤羽需要证据证明高地与叶音有交易"
+      ],
+      "actors": [
+        "cast_chiyu",
+        "cast_qingyu"
+      ],
+      "motive": "赤羽想抓一个通敌的现行，换回自己在营里的位置。",
+      "action": "赤羽夜里摸进高地洞口，被青羽从背后按倒。她没有带武器，只带了一截记数用的炭笔。",
+      "result": "赤羽被扣在洞口，青羽从她怀里搜出记着粮袋数量的炭笔。",
+      "stateChanges": [
+        "赤羽从怀疑者变成被抓者",
+        "青羽确认原猎团在查高地的粮"
+      ],
+      "foreshadow": "炭笔上记的数字，比账册多四袋。",
+      "beats": [
+        "洞口的风把火塘吹暗",
+        "青羽的手先按住她的腕，不是喉咙",
+        "炭笔滚到地上，数字朝上"
+      ],
+      "tone": "夜、被按住的手腕、火塘余烬",
+      "locationId": "loc_cave",
+      "dialogue": [
+        {
+          "characterId": "cast_qingyu",
+          "line": "你来偷什么？"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "line": "数袋子。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_qingyu",
+          "level": "knows",
+          "subject": "原猎团在查高地的储粮",
+          "learnedAt": "node_ep13_sneak"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "level": "partial",
+          "subject": "高地没有立刻杀她",
+          "learnedAt": "node_ep13_sneak"
+        }
+      ]
+    },
+    {
+      "id": "node_ep15_punish",
+      "code": "N11",
+      "episode": 15,
+      "order": 0,
+      "status": "confirmed",
+      "title": "苦役",
+      "goal": "让赤羽的被抓变成一次公开、合规的惩罚，同时给她近距离观察高地的理由。",
+      "preconditions": [
+        "赤羽夜探高地被抓"
+      ],
+      "actors": [
+        "cast_chiyu",
+        "cast_gushuang",
+        "cast_sumei"
+      ],
+      "motive": "苏媚要借赤羽的错把高地危险再钉一遍；顾霜想保住赤羽的命。",
+      "action": "顾霜判赤羽去高地边缘服十天苦役，替营地修栅栏；苏媚坚持让她每天回营报到，方便盯着。",
+      "result": "赤羽开始每天进出高地，苦役成了她观察陆野分配的窗口。",
+      "stateChanges": [
+        "赤羽获得进出高地的合法理由",
+        "苏媚以为自己在控制赤羽",
+        "顾霜第一次为一个人改了判罚"
+      ],
+      "foreshadow": "苦役的木牌背面，顾霜多写了一行“可申诉”。",
+      "beats": [
+        "顾霜念判罚，苏媚补了一句每日报到",
+        "赤羽低头接牌，看见背面有字",
+        "第一天收工，她故意走得很慢"
+      ],
+      "tone": "公开的羞辱、木头与铁钉",
+      "locationId": "loc_camp",
+      "outcomeId": "goal_punish",
+      "dialogue": [
+        {
+          "characterId": "cast_gushuang",
+          "line": "十天，修完栅栏就回来。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "每天回营报到，少一次加一天。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "判罚背后有苏媚的推动",
+          "learnedAt": "node_ep15_punish"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "苏媚在借题发挥",
+          "learnedAt": "node_ep15_punish"
+        }
+      ]
+    },
+    {
+      "id": "node_ep16_ration",
+      "code": "N12",
+      "episode": 16,
+      "order": 0,
+      "status": "confirmed",
+      "title": "公平的分法",
+      "goal": "让赤羽亲眼看见另一种分配方式，动摇“苏媚只是谨慎”的解释。",
+      "preconditions": [
+        "赤羽在高地服苦役"
+      ],
+      "actors": [
+        "cast_chiyu",
+        "cast_luye",
+        "cast_jiaojiao"
+      ],
+      "motive": "陆野要让她看见规则不是口号，是每天称出来的。",
+      "action": "收工后分饭，角角报每人的工数，陆野按工数称肉，伤员先领。赤羽报了自己的工数，陆野照数给，没有多给也没有少给。",
+      "result": "赤羽第一次拿到只按劳动算的一份饭，也第一次看见粮袋是敞开的。",
+      "stateChanges": [
+        "赤羽开始对比两套分配",
+        "赤羽对陆野的敌意下降"
+      ],
+      "foreshadow": "敞开的粮袋里，没有那种双结封绳。",
+      "beats": [
+        "角角念工数，念到赤羽时停了一下",
+        "陆野按数切肉，刀口很准",
+        "赤羽端着饭，没找到可以被克扣的地方"
+      ],
+      "tone": "火光、称肉的石头、第一次松下来的肩",
+      "locationId": "loc_fire",
+      "dialogue": [
+        {
+          "characterId": "cast_chiyu",
+          "line": "你不怕我多报？"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "账在这儿，谁都看得见。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "高地按工数公开分饭",
+          "learnedAt": "node_ep16_ration"
+        },
+        {
+          "characterId": "cast_luye",
+          "level": "partial",
+          "subject": "赤羽在拿两套规矩对照",
+          "learnedAt": "node_ep16_ration"
+        }
+      ]
+    },
+    {
+      "id": "node_ep17_silence",
+      "code": "N13",
+      "episode": 17,
+      "order": 0,
+      "status": "confirmed",
+      "title": "医师的沉默",
+      "goal": "让顾霜第一次面对程序正确但结论错误的可能，同时不让她立刻站队。",
+      "preconditions": [
+        "赤羽看见高地公开分饭",
+        "赤羽掌握储粮账实不符的部分事实"
+      ],
+      "actors": [
+        "cast_gushuang",
+        "cast_chiyu"
+      ],
+      "motive": "赤羽想给顾霜一个不丢面子的台阶；顾霜想先确认自己不是被利用来夺权。",
+      "action": "赤羽没有指控，只把自己记的数字和账册并排放在顾霜面前。顾霜看完，把纸折起来，说先别声张，然后把它收进药箱最底层。",
+      "result": "顾霜选择暂不表态，但她把证据收进了自己的药箱，而不是交回苏媚。",
+      "stateChanges": [
+        "顾霜从相信变成不敢确认",
+        "赤羽确认顾霜不是同谋"
+      ],
+      "foreshadow": "药箱底层还压着一张被撕掉一角的旧账页。",
+      "beats": [
+        "赤羽把两张纸并排推过去",
+        "顾霜的手指在数字上停住",
+        "她把纸折好，放进药箱最底层"
+      ],
+      "tone": "压低的声音、纸张摩擦",
+      "locationId": "loc_camp",
+      "dialogue": [
+        {
+          "characterId": "cast_gushuang",
+          "line": "你确定这些袋子你数过？"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "line": "两遍。第二遍是当着苏媚数的。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "苏媚的账目可能有问题",
+          "learnedAt": "node_ep17_silence"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "顾霜没有把纸交回去",
+          "learnedAt": "node_ep17_silence"
+        }
+      ]
+    },
+    {
+      "id": "node_ep18_last",
+      "code": "N14",
+      "episode": 18,
+      "order": 0,
+      "status": "confirmed",
+      "title": "最后一碗",
+      "goal": "把叶音推到再留一天就要承认这套规矩的位置。",
+      "preconditions": [
+        "叶音不再向营内任何人求助",
+        "叶音被认定私藏食物"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_sumei",
+        "cast_gushuang"
+      ],
+      "motive": "苏媚要在灾前把最后一个不听话的人清出去；顾霜想避免当众冲突。",
+      "action": "分饭时苏媚把叶音的那份扣下，说先补上之前私藏的。叶音当众要求核对工签，苏媚让她先解释来源不明。",
+      "result": "叶音的最后一份口粮被扣，讨说法变成第二次审问。",
+      "stateChanges": [
+        "叶音确认留下只会重复同一天",
+        "顾霜在众人面前没有阻止"
+      ],
+      "foreshadow": "叶音没有吵，只把自己的碗倒扣在台面上。",
+      "beats": [
+        "勺子从叶音碗边绕过去",
+        "叶音把工签拍在台上",
+        "苏媚把问题又推回来源不明四个字"
+      ],
+      "tone": "饥饿、公开的安静、碗底磕在木台上",
+      "locationId": "loc_camp",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "我的工数在这。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "先解释来源，再谈工数。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "申诉不会再有结果",
+          "learnedAt": "node_ep18_last"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "叶音要走",
+          "learnedAt": "node_ep18_last"
+        }
+      ]
+    },
+    {
+      "id": "node_ep19_leave",
+      "code": "N15",
+      "episode": 19,
+      "order": 0,
+      "status": "confirmed",
+      "title": "交还工签",
+      "goal": "让叶音的离开成为一次公开、主动的选择，而不是被赶走。",
+      "preconditions": [
+        "叶音当众讨说法失败",
+        "叶音确认高地愿意按劳动收人"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_sumei",
+        "cast_gushuang"
+      ],
+      "motive": "叶音要拿回自己的名字，而不是拿回那份口粮。",
+      "action": "叶音在晨间分饭前走到台前，把工签放回苏媚手里，说明自己不是被赶走的，是不再接受这套分配。顾霜问她去哪，她说去一个按工数给饭的地方。",
+      "result": "叶音当众离开原猎团，工签留在台上，没有人拦她。",
+      "stateChanges": [
+        "叶音失去原猎团身份，获得公开的离开理由",
+        "顾霜的权威第一次被当众绕过",
+        "苏媚失去一个可以反复立威的对象"
+      ],
+      "foreshadow": "叶音走出营地时，赤羽在栅栏边看着她，没有说话。",
+      "beats": [
+        "叶音把工签放在台面中央，压住账册",
+        "她说：不是你们赶我走",
+        "顾霜站起来，又坐下"
+      ],
+      "tone": "清晨、冷、把话说清楚的平静",
+      "locationId": "loc_camp",
+      "outcomeId": "goal_leave",
+      "debtIds": [
+        "debt_return"
+      ],
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "工签还你。工数我带走。"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "line": "你要去哪？"
+        },
+        {
+          "characterId": "cast_yeyin",
+          "line": "按工数给饭的地方。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_sumei",
+          "level": "knows",
+          "subject": "叶音去了高地",
+          "learnedAt": "node_ep19_leave"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "knows",
+          "subject": "自己没有拦",
+          "learnedAt": "node_ep19_leave"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "level": "partial",
+          "subject": "叶音的选择可能是对的",
+          "learnedAt": "node_ep19_leave"
+        }
+      ]
+    },
+    {
+      "id": "node_ep20_arrive",
+      "code": "N16",
+      "episode": 20,
+      "order": 0,
+      "status": "confirmed",
+      "title": "自愿的前提",
+      "goal": "让叶音进入高地，但不是以被收留的身份，而是先谈清条件。",
+      "preconditions": [
+        "叶音已经离开原猎团",
+        "高地按工数公开分饭"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_luye",
+        "cast_qingyu"
+      ],
+      "motive": "叶音要的不是收留，是一个可以自己签字的位置；陆野要确认她不是来躲灾的。",
+      "action": "叶音站在营门外，没有直接进去。她先问清三件事：工数怎么记、饭怎么分、想走的时候能不能走。陆野逐条回答，青羽在旁边补了一条不养闲人。",
+      "result": "叶音拿到自愿留下的资格：先试工三天，账目公开，随时可以走。",
+      "stateChanges": [
+        "叶音成为高地第一个谈条件进来的人",
+        "青羽保留了对她的观察期"
+      ],
+      "foreshadow": "陆野把第一条规则刻在木牌上，留给后来的人。",
+      "beats": [
+        "叶音在营门外停下，没有跨进去",
+        "她一条一条问，陆野一条一条答",
+        "青羽补了一句：不养闲人"
+      ],
+      "tone": "门口、谈判、被认真对待的迟疑",
+      "locationId": "loc_fire",
+      "outcomeId": "goal_arrive",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "想走的时候能走吗？"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "能。账结清就能。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "高地的三条入营条件",
+          "learnedAt": "node_ep20_arrive"
+        },
+        {
+          "characterId": "cast_qingyu",
+          "level": "partial",
+          "subject": "叶音不是来躲灾的",
+          "learnedAt": "node_ep20_arrive"
+        },
+        {
+          "characterId": "cast_luye",
+          "level": "knows",
+          "subject": "叶音要的是可签字的位置",
+          "learnedAt": "node_ep20_arrive"
+        }
+      ]
+    },
+    {
+      "id": "node_ep22_work",
+      "code": "N17",
+      "episode": 22,
+      "order": 0,
+      "status": "confirmed",
+      "title": "按工领饭",
+      "goal": "让外来者第一次靠劳动而不是靠关系获得位置。",
+      "preconditions": [
+        "叶音进入高地营地"
+      ],
+      "actors": [
+        "cast_yeyin",
+        "cast_jiaojiao",
+        "cast_qingyu"
+      ],
+      "motive": "叶音要证明自己不是负担；角角要证明账算得清。",
+      "action": "叶音第一天正式上工，修水沟、搬石头。收工时角角按工数给饭，青羽在旁边看她的碗有没有多。",
+      "result": "叶音按工领到第一份饭，账上第一次出现她的名字。",
+      "stateChanges": [
+        "叶音从外来者变成有工数的人",
+        "角角承认她干活不偷懒"
+      ],
+      "foreshadow": "角角在账本上给叶音的名字后面画了一个小三角，表示观察中。",
+      "beats": [
+        "水沟修到一半，叶音的手磨破了",
+        "角角报工数，叶音是那天最多的",
+        "青羽看了一眼她的碗，没说话"
+      ],
+      "tone": "白天、泥土、被承认的疲惫",
+      "locationId": "loc_edge",
+      "dialogue": [
+        {
+          "characterId": "cast_jiaojiao",
+          "line": "今天你最多。"
+        },
+        {
+          "characterId": "cast_yeyin",
+          "line": "明天也是。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_jiaojiao",
+          "level": "partial",
+          "subject": "叶音能干活",
+          "learnedAt": "node_ep22_work"
+        },
+        {
+          "characterId": "cast_qingyu",
+          "level": "partial",
+          "subject": "叶音不是三天就走的人",
+          "learnedAt": "node_ep22_work"
+        }
+      ]
+    },
+    {
+      "id": "node_ep26_flood",
+      "code": "N18",
+      "episode": 26,
+      "order": 0,
+      "status": "confirmed",
+      "title": "不开仓",
+      "goal": "让苏媚在危机中做一次合规但致命的决定，为第28集的揭露积累动机。",
+      "preconditions": [
+        "苏媚获得粮账的完全解释权"
+      ],
+      "actors": [
+        "cast_sumei",
+        "cast_gushuang",
+        "cast_chiyu"
+      ],
+      "motive": "苏媚要保住应急粮的解释权，哪怕代价是别人的口粮。",
+      "action": "洪水漫进粮棚，众人要求开仓把粮食转到高处。苏媚以应急粮不能动为由只开最外面一排，结果湿粮被水冲走。",
+      "result": "原猎团损失大半存粮，苏媚把责任推给来不及，赤羽当场记下被冲走的袋数；最里面七袋双结封绳一袋没少。",
+      "stateChanges": [
+        "原猎团进入真正的粮荒",
+        "赤羽从怀疑转为准备作证",
+        "顾霜第一次当众质问苏媚"
+      ],
+      "foreshadow": "被冲走的都是外层旧粮，最里面七袋双结封绳一袋没少。",
+      "beats": [
+        "水漫过粮棚门槛",
+        "苏媚只让开最外面一排",
+        "赤羽站在水里数袋子，数到第七袋停住"
+      ],
+      "tone": "雨、浑水、压不住的质问",
+      "locationId": "loc_camp",
+      "debtIds": [
+        "debt_sumei"
+      ],
+      "dialogue": [
+        {
+          "characterId": "cast_gushuang",
+          "line": "里面还有几袋？"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "应急的，不能动。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "苏媚在洪水里保住了双结封绳的粮",
+          "learnedAt": "node_ep26_flood"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "level": "partial",
+          "subject": "苏媚的解释站不住",
+          "learnedAt": "node_ep26_flood"
+        }
+      ]
+    },
+    {
+      "id": "node_ep28_expose",
+      "code": "N19",
+      "episode": 28,
+      "order": 0,
+      "status": "confirmed",
+      "title": "账册与诱饵",
+      "goal": "让苏媚的暴露来自可核对的证据链，而不是主角的直觉。",
+      "preconditions": [
+        "赤羽看过高地公开分饭",
+        "赤羽见过双结封绳的粮袋",
+        "顾霜开始当众质问苏媚"
+      ],
+      "actors": [
+        "cast_chiyu",
+        "cast_sumei",
+        "cast_gushuang"
+      ],
+      "motive": "赤羽要的不是报复，是让所有人看见自己算过的账。",
+      "action": "赤羽把诱饵袋、双结封绳和账册并排摊在众人面前，请顾霜当场核对。顾霜打开药箱，取出那张缺角的旧账页。苏媚第一次没有给出解释。",
+      "result": "苏媚私藏粮食、用诱饵袋调包的事实被当众核实，她的分配权当场失效。",
+      "stateChanges": [
+        "苏媚失去物资处置权",
+        "顾霜公开承认自己判错过",
+        "赤羽从被罚者变成作证者"
+      ],
+      "foreshadow": "苏媚没有否认，只问了一句你们以为我藏粮是为了谁。",
+      "beats": [
+        "三样东西并排放在木台上",
+        "顾霜从药箱底层取出缺角账页",
+        "苏媚看了一眼，没有再说话"
+      ],
+      "tone": "公开对质、纸页、没有再提高的声音",
+      "locationId": "loc_camp",
+      "outcomeId": "goal_expose",
+      "debtIds": [
+        "debt_sumei"
+      ],
+      "dialogue": [
+        {
+          "characterId": "cast_chiyu",
+          "line": "双结封绳，只有诱饵袋用。"
+        },
+        {
+          "characterId": "cast_gushuang",
+          "line": "账我核过了。"
+        },
+        {
+          "characterId": "cast_sumei",
+          "line": "你们以为我藏粮是为了谁？"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_gushuang",
+          "level": "knows",
+          "subject": "苏媚调包诱饵与储粮",
+          "learnedAt": "node_ep28_expose"
+        },
+        {
+          "characterId": "cast_chiyu",
+          "level": "knows",
+          "subject": "证据链完整",
+          "learnedAt": "node_ep28_expose"
+        },
+        {
+          "characterId": "cast_sumei",
+          "level": "knows",
+          "subject": "自己已无法解释",
+          "learnedAt": "node_ep28_expose"
+        }
+      ]
+    },
+    {
+      "id": "node_ep30_rules",
+      "code": "N20",
+      "episode": 30,
+      "order": 0,
+      "status": "draft",
+      "title": "写下来的规矩",
+      "goal": "把劳动有明账从陆野一个人的做法，变成部落公开的规则。",
+      "preconditions": [
+        "叶音按工领饭",
+        "高地按工数公开分饭"
+      ],
+      "actors": [
+        "cast_luye",
+        "cast_yeyin",
+        "cast_qingyu",
+        "cast_jiaojiao"
+      ],
+      "motive": "陆野要让规则不依赖他本人，否则他也会变成另一个苏媚。",
+      "action": "众人围在火塘边，把入营、工数、分饭、离开四条规则刻上木牌。叶音补上想走的时候能走，角角补上账要公开。",
+      "result": "高地有了公开的成文规则，叶音的名字第一次被刻进部落的规则里。",
+      "stateChanges": [
+        "高地从陆野的做法变成可被引用的规则",
+        "叶音获得归属感但不欠人情"
+      ],
+      "foreshadow": "木牌最下面留了一块空白，给下一批人。",
+      "beats": [
+        "木牌抬到火塘边，刀刻第一道",
+        "叶音要求把自己那句加进去",
+        "角角坚持把账目那条刻在最上面"
+      ],
+      "tone": "火、木屑、公开的承诺",
+      "locationId": "loc_fire",
+      "outcomeId": "goal_rules",
+      "dialogue": [
+        {
+          "characterId": "cast_yeyin",
+          "line": "想走的时候能走，这条要写。"
+        },
+        {
+          "characterId": "cast_luye",
+          "line": "写。写上去就不能反悔。"
+        }
+      ],
+      "knowledge": [
+        {
+          "characterId": "cast_yeyin",
+          "level": "knows",
+          "subject": "规则是她参与写的",
+          "learnedAt": "node_ep30_rules"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "node_ep01_banish",
+      "to": "node_ep02_rescue",
+      "type": "cause",
+      "note": "被放逐后才独自进入密林"
+    },
+    {
+      "from": "node_ep02_rescue",
+      "to": "node_ep03_fire",
+      "type": "cause",
+      "note": "救下青羽后才有第一顿共同的饭"
+    },
+    {
+      "from": "node_ep03_fire",
+      "to": "node_ep04_smoke",
+      "type": "motive",
+      "note": "稳定火塘让高地的炊烟被看见"
+    },
+    {
+      "from": "node_ep04_smoke",
+      "to": "node_ep06_confiscate",
+      "type": "cause",
+      "note": "叶音去过高地，苏媚开始查来源"
+    },
+    {
+      "from": "node_ep06_confiscate",
+      "to": "node_ep08_smell",
+      "type": "motive",
+      "note": "没收之后叶音改用藏的方式"
+    },
+    {
+      "from": "node_ep08_smell",
+      "to": "node_ep09_watch",
+      "type": "cause",
+      "note": "私藏被认定后顾霜必须处罚"
+    },
+    {
+      "from": "node_ep09_watch",
+      "to": "node_ep11_trade",
+      "type": "motive",
+      "note": "没有口粮迫使叶音主动找退路"
+    },
+    {
+      "from": "node_ep09_watch",
+      "to": "node_ep12_storage",
+      "type": "requires",
+      "note": "守夜时听见粮棚后的拖动声"
+    },
+    {
+      "from": "node_ep11_trade",
+      "to": "node_ep15_punish",
+      "type": "requires",
+      "note": "叶音的夜行让赤羽确信高地在交易"
+    },
+    {
+      "from": "node_ep12_storage",
+      "to": "node_ep13_sneak",
+      "type": "cause",
+      "note": "账实不符促使赤羽去数高地的袋子"
+    },
+    {
+      "from": "node_ep13_sneak",
+      "to": "node_ep15_punish",
+      "type": "cause",
+      "note": "被抓后才有公开判罚"
+    },
+    {
+      "from": "node_ep15_punish",
+      "to": "node_ep16_ration",
+      "type": "requires",
+      "note": "苦役让她留在高地看见分饭"
+    },
+    {
+      "from": "node_ep16_ration",
+      "to": "node_ep17_silence",
+      "type": "motive",
+      "note": "看见公开分饭后决定给顾霜看证据"
+    },
+    {
+      "from": "node_ep12_storage",
+      "to": "node_ep17_silence",
+      "type": "requires",
+      "note": "账实不符的数字是并排核对的一半证据"
+    },
+    {
+      "from": "node_ep09_watch",
+      "to": "node_ep18_last",
+      "type": "cause",
+      "note": "守夜受罚让叶音不再求助"
+    },
+    {
+      "from": "node_ep18_last",
+      "to": "node_ep19_leave",
+      "type": "cause",
+      "note": "讨说法失败直接推向离团"
+    },
+    {
+      "from": "node_ep11_trade",
+      "to": "node_ep19_leave",
+      "type": "requires",
+      "note": "高地按劳动收人是她敢走的依据"
+    },
+    {
+      "from": "node_ep19_leave",
+      "to": "node_ep20_arrive",
+      "type": "cause",
+      "note": "离开后才有营门外的谈判"
+    },
+    {
+      "from": "node_ep16_ration",
+      "to": "node_ep20_arrive",
+      "type": "requires",
+      "note": "按工分饭是谈判的三条前提之一"
+    },
+    {
+      "from": "node_ep20_arrive",
+      "to": "node_ep22_work",
+      "type": "cause",
+      "note": "试工三天后正式上工"
+    },
+    {
+      "from": "node_ep26_flood",
+      "to": "node_ep28_expose",
+      "type": "cause",
+      "note": "洪水里保住的七袋粮成为当众核对的实物"
+    },
+    {
+      "from": "node_ep16_ration",
+      "to": "node_ep28_expose",
+      "type": "requires",
+      "note": "她见过另一种分法，才有底气要求核对"
+    },
+    {
+      "from": "node_ep17_silence",
+      "to": "node_ep28_expose",
+      "type": "requires",
+      "note": "顾霜收下的缺角账页是最后一环"
+    },
+    {
+      "from": "node_ep22_work",
+      "to": "node_ep30_rules",
+      "type": "cause",
+      "note": "外来者按工领饭后，规则需要成文"
+    },
+    {
+      "from": "node_ep28_expose",
+      "to": "node_ep30_rules",
+      "type": "motive",
+      "note": "旧秩序靠人来解释，新秩序必须写下来"
+    },
+    {
+      "from": "node_ep01_banish",
+      "to": "node_ep26_flood",
+      "type": "requires",
+      "note": "苏媚手里的粮账解释权，让她能在洪水时决定开哪一排"
+    }
+  ],
+  "debts": [
+    {
+      "id": "debt_sumei",
+      "question": "苏媚真正想得到什么？",
+      "detail": "从第1集被撕掉的账页，到第12集的双结封绳，再到第28集的完整账册，观众应该能自己拼出答案。",
+      "status": "paid",
+      "planted": [
+        "node_ep01_banish",
+        "node_ep12_storage",
+        "node_ep26_flood"
+      ],
+      "payoff": [
+        "node_ep28_expose"
+      ],
+      "note": "删除第12集或第26集的任一事，都会削弱第28集的证据链。"
+    },
+    {
+      "id": "debt_return",
+      "question": "叶音离开后，原猎团会不会承认自己错了？",
+      "detail": "第19集只完成了离开，没有完成承认。这条债务留给顾霜与赤羽的后续选择。",
+      "status": "open",
+      "planted": [
+        "node_ep19_leave"
+      ],
+      "payoff": [],
+      "note": "第28集核账只解决苏媚，顾霜的承认仍未发生。"
+    },
+    {
+      "id": "debt_grade",
+      "question": "陆野的F级评定是否真实？",
+      "detail": "第1集的三季账目只是被念出来的那部分，被撕掉的一角还没有解释。",
+      "status": "open",
+      "planted": [
+        "node_ep01_banish"
+      ],
+      "payoff": [],
+      "note": "可在第二季回收，或在第30集木牌旁用一句台词点一下。"
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch_misread",
+      "nodeId": "node_ep06_confiscate",
+      "name": "方案B · 误会升级型",
+      "approach": "把没收升级成诬陷偷窃，用一场自证失败把叶音推到离团边缘。",
+      "summary": "叶音被诬陷偷食物 → 试图自证 → 苏媚隐藏证据 → 顾霜错误处罚 → 陆野拿出交易记录 → 叶音决定离开。悬疑与打脸更集中，但顾霜的权威会提前受损。",
+      "pros": "反转密度高，适合短剧前段抓人。",
+      "cons": "第28集的核账需要重写，顾霜很难再保持中立。",
+      "status": "draft",
+      "events": [
+        {
+          "episode": 7,
+          "title": "被指偷粮",
+          "action": "苏媚把少掉的一袋粮记在叶音头上。",
+          "result": "叶音从违规者变成嫌疑犯。",
+          "preconditions": [
+            "苏媚要清掉叶音"
+          ],
+          "actors": [
+            "cast_yeyin",
+            "cast_sumei"
+          ]
+        },
+        {
+          "episode": 8,
+          "title": "自证失败",
+          "action": "叶音要求搜自己的铺位，搜出的却是别人放的肉干。",
+          "result": "她越自证越像有罪。",
+          "preconditions": [
+            "叶音被指偷粮"
+          ],
+          "actors": [
+            "cast_yeyin",
+            "cast_gushuang"
+          ]
+        },
+        {
+          "episode": 9,
+          "title": "错误处罚",
+          "action": "顾霜按现有证据罚叶音守夜并扣工签。",
+          "result": "叶音第一次当众被定为小偷。",
+          "preconditions": [
+            "自证失败"
+          ],
+          "actors": [
+            "cast_gushuang",
+            "cast_yeyin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "branch_emotion",
+      "nodeId": "node_ep06_confiscate",
+      "name": "方案C · 情感冲突型",
+      "approach": "让没收同时牵动青羽的警戒线，用一场误会推进感情与阵营两条线。",
+      "summary": "叶音偷偷与陆野交易 → 青羽误以为她刺探情报 → 陆野坚持交易的公平性 → 苏媚借机指控通敌。一场事件同时推进感情线和阵营线。",
+      "pros": "一条事件推进两条线，成本低。",
+      "cons": "青羽的敌意会拖慢第20集的入营谈判，需要额外的和解事件。",
+      "status": "draft",
+      "events": [
+        {
+          "episode": 7,
+          "title": "被看见的交易",
+          "action": "青羽撞见叶音把工具递给陆野。",
+          "result": "青羽认定她在刺探高地的储备。",
+          "preconditions": [
+            "叶音需要口粮"
+          ],
+          "actors": [
+            "cast_qingyu",
+            "cast_yeyin"
+          ]
+        },
+        {
+          "episode": 8,
+          "title": "公平的坚持",
+          "action": "陆野当众按重量结清，拒绝多给叶音一块。",
+          "result": "青羽第一次看见陆野把规则放在人情前面。",
+          "preconditions": [
+            "青羽认定叶音在刺探"
+          ],
+          "actors": [
+            "cast_luye",
+            "cast_qingyu"
+          ]
+        },
+        {
+          "episode": 9,
+          "title": "通敌的帽子",
+          "action": "苏媚把这场交易重新叙述成通敌。",
+          "result": "叶音被夹在两套叙事中间。",
+          "preconditions": [
+            "交易被看见"
+          ],
+          "actors": [
+            "cast_sumei",
+            "cast_yeyin"
+          ]
+        }
+      ]
+    }
+  ]
+}

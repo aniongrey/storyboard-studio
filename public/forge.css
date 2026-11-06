@@ -1,0 +1,295 @@
+/* 因果剧本：2K 桌面工作区，资料、画布与编辑各有固定位置。 */
+.forge-content{max-width:none;height:100dvh;padding:24px 28px;overflow:hidden}.forge-page{display:grid;gap:14px;align-content:start;min-height:0}
+.forge-workbench{height:100%;grid-template-rows:auto auto minmax(0,1fr)}
+.forge-welcome{overflow:auto;max-height:100%}
+.forge-page :is(button,input,select,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.forge-page :is(h1,h2,h3,h4,p,small){overflow-wrap:anywhere}
+.forge-page :is(.forge-side-content,.forge-workspace-content,.forge-canvas-wrap,.forge-timeline){scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+
+/* 顶栏 */
+.forge-hero{display:grid;gap:14px;padding:18px 22px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.forge-hero-top{display:flex;align-items:center;gap:24px}
+.forge-heading{display:grid;gap:4px}
+.forge-hero-top h1{font-size:22px;line-height:1.4}
+.forge-heading p{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.forge-hero-meta{display:flex;gap:18px;align-items:center;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);min-width:0}
+.forge-project-switch{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.forge-project-switch select{width:280px;font-size:12px;padding:5px 9px;background:var(--surface-raised)}
+.forge-project-meta{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.forge-model-state{white-space:nowrap}
+.forge-model-state::before{content:"";display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:var(--surface-raised)}
+.forge-model-state[data-tone=good]::before{background:var(--green)}
+.forge-updated{margin-left:auto;white-space:nowrap;font-size:11px}
+.forge-hero-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.forge-save-state{font-size:12px;color:var(--muted);white-space:nowrap;margin-right:10px}
+.forge-save-state[data-tone=good]{color:var(--green)}
+.forge-save-state[data-tone=warn]{color:var(--accent)}
+.forge-save-state[data-tone=bad]{color:var(--red)}
+.forge-connect-hint{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px;background:var(--accent-soft);border:1px solid var(--line-strong);border-radius:8px;font-size:12px;color:var(--accent)}
+
+/* 次要信息收在一条状态栏。 */
+.forge-stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding:13px 0;border:1px solid var(--line);border-radius:10px;background:var(--surface-raised)}
+.forge-stat{display:flex;gap:10px;align-items:baseline;padding:0 20px;border-right:1px solid var(--line);min-width:0}
+.forge-stat:last-child{border-right:0}
+.forge-stat-label{font-size:12px;color:var(--muted);white-space:nowrap}
+.forge-stat strong{font-size:19px;line-height:1.3;font-variant-numeric:tabular-nums;white-space:nowrap}
+.forge-stat small{font-size:11px;color:var(--muted);margin-left:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* 三栏骨架 */
+.forge-shell{display:grid;grid-template-columns:280px minmax(0,1fr) 440px;gap:16px;min-height:0}
+.forge-side{display:grid;grid-template-rows:auto auto minmax(0,1fr);min-width:0;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.forge-side-heading{display:grid;gap:3px;padding:18px 18px 14px}
+.forge-side-heading h2,.forge-workspace-heading h2{font-size:17px;font-weight:600}
+.forge-side>.forge-tabs,.forge-right>.forge-tabs{margin:0 14px 14px}
+.forge-side-content{min-height:0;overflow:auto;padding:0 16px 18px;overscroll-behavior:contain}
+.forge-side-content>.forge-panel{padding:0;border:0;border-radius:0;box-shadow:none}
+.forge-library .forge-panel>.forge-panel-head{display:none}
+.forge-main{display:grid;min-width:0;min-height:0}
+.forge-panel{display:grid;gap:12px;align-content:start;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
+.forge-panel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.forge-panel-head h3{font-size:14px}
+.forge-panel-head small{font-size:11px;color:var(--muted)}
+.forge-stack{display:grid;gap:7px}
+.forge-list{display:grid;gap:9px}
+.forge-hint{margin:0;font-size:12px;line-height:1.8;color:var(--muted)}
+.forge-workspace{padding:0;gap:0;grid-template-rows:auto auto minmax(0,1fr);min-height:0;overflow:hidden}
+.forge-workspace-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 20px 14px}
+.forge-workspace-heading>div{display:grid;gap:3px}
+.forge-workspace-heading>.forge-workspace-actions{display:flex;flex-direction:row;align-items:center;gap:9px;flex-shrink:0}
+.forge-workspace-content{overflow:auto;min-height:0;padding:18px 20px;overscroll-behavior:contain}
+.forge-workspace-content.is-graph{display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;gap:12px;overflow:hidden;padding:16px}
+.forge-graph-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:0 2px}
+.forge-graph-footer>small{font-size:11px}
+.forge-episode-nav{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:13px}
+.forge-episode-nav h3{font-size:12px;font-weight:600}
+
+/* 左：固定结果与人物 */
+.outcome-card{display:grid;gap:6px;width:100%;padding:12px;text-align:left;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.outcome-card[aria-pressed=true]{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 2px var(--accent-ring)}
+.outcome-card.lock-hard{border-left:3px solid var(--red)}
+.outcome-card.lock-soft{border-left:3px solid var(--line-strong)}
+.outcome-card.lock-open{border-left:3px solid var(--line)}
+.outcome-card strong{font-size:12px}
+.outcome-title{font-size:13px;font-weight:600}
+.outcome-card small{font-size:11.5px;color:var(--muted);line-height:1.65}
+.outcome-detail{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--muted)}
+.cast-card{display:grid;gap:5px;width:100%;padding:12px;text-align:left;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.cast-card:hover:not(:disabled){background:var(--hover)}
+.cast-card strong{font-size:13px}
+.cast-card small{font-size:12px;color:var(--muted);line-height:1.7}
+.cast-card .row.between small{font-size:10px;color:var(--accent)}
+
+/* 中：工具栏 + 因果图 */
+.forge-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:0 0 2px;background:var(--surface)}
+.forge-toolbar>.grow{flex:1 1 20px}
+.forge-toolbar-label{font-size:11px;color:var(--muted)}
+.forge-toolbar select{width:auto;min-width:104px;padding:5px 8px;font-size:12px}
+.forge-toolbar button.active{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.forge-legend{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.legend-item{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.legend-item i{width:12px;height:3px;border-radius:2px;display:inline-block}
+
+.forge-canvas-wrap{position:relative;overflow:auto;min-width:0;min-height:0;border:1px solid var(--line);border-radius:9px;background:var(--paper);background-image:radial-gradient(var(--line) .8px,transparent .8px);background-size:20px 20px;overscroll-behavior:contain}
+.forge-canvas{position:relative;min-height:100%}
+.forge-edges{position:absolute;top:0;left:0;pointer-events:none;overflow:visible}
+.forge-edge-hit{pointer-events:stroke;cursor:pointer}
+.forge-edge-hit:hover{stroke:var(--accent-ring)}
+.forge-canvas-tip{position:sticky;left:8px;bottom:8px;display:inline-block;margin:8px;padding:4px 9px;border-radius:6px;background:#323232e0;color:var(--ink);font-size:11px;z-index:4}
+
+.ep-head{position:absolute;top:12px;display:grid;gap:2px;width:196px;pointer-events:none}
+.ep-head strong{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.ep-head small{font-size:10px;color:var(--muted)}
+.ep-head .badge{justify-self:start;font-size:9px;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+
+.forge-node{position:absolute;display:grid;gap:3px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);box-shadow:0 2px 10px #00000040;cursor:grab;text-align:left;transition:border-color .12s,box-shadow .12s}
+.forge-node:hover{border-color:var(--line-strong)}
+.forge-node:active{cursor:grabbing}
+.forge-node[aria-pressed=true]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-ring)}
+.forge-node.has-outcome{border-left:3px solid var(--accent);background:var(--accent-soft)}
+.forge-node.confirmed .node-dot{background:var(--green)}
+.forge-node h4{font-size:13px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.forge-node p{margin:0;font-size:11px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.node-top{display:flex;align-items:center;gap:5px}
+.node-ep{font-size:10px;color:var(--accent);font-weight:700;letter-spacing:.04em}
+.node-dot{width:6px;height:6px;border-radius:50%;background:var(--surface-raised);display:inline-block}
+.node-dot[data-status=confirmed]{background:var(--green)}
+.node-goal{margin-left:auto;font-size:9px;color:var(--accent);border:1px solid var(--line);border-radius:4px;padding:0 4px;background:var(--surface-raised)}
+.node-foot{display:flex;justify-content:space-between;gap:6px;margin-top:1px}
+.node-foot small{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.forge-empty{display:grid;gap:10px;justify-items:center;align-content:center;padding:56px 20px;text-align:center}
+.forge-empty h3{font-size:15px}
+.forge-empty p{font-size:12px;color:var(--muted)}
+
+/* 中：事件检查器 */
+.forge-inspector{gap:16px}
+.inspector-head{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:2px 0 16px}
+.inspector-head h2{font-size:17px}
+.inspector-head>.row{width:100%}
+.inspector-head>.row>.badge{margin-right:auto}
+.inspector-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.inspector-grid>.full{grid-column:1/-1}
+.forge-inspector textarea{min-height:70px;font-size:13px;line-height:1.75}
+.forge-actors legend{font-size:12px;font-weight:400;color:var(--muted);margin-bottom:7px}
+.inspector-disclosure{border-top:1px solid var(--line)}
+.inspector-disclosure>summary{display:flex;align-items:center;gap:8px;padding:13px 0;color:var(--ink);list-style:none}
+.inspector-disclosure>summary::-webkit-details-marker{display:none}
+.inspector-disclosure>summary::before{content:"›";font-size:19px;line-height:1;color:var(--muted);width:12px}
+.inspector-disclosure[open]>summary::before{transform:rotate(90deg)}
+.inspector-disclosure>summary strong{font-size:13px;font-weight:600}
+.inspector-disclosure>summary small{margin-left:auto;font-size:11px}
+.inspector-section-body{display:grid;gap:12px;padding:0 0 14px}
+.dialogue-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 30px;gap:8px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface-raised)}
+.dialogue-row>input:nth-child(2){grid-row:2;grid-column:1/-1}
+.dialogue-row>button{grid-row:1;grid-column:3}
+.dialogue-row select,.dialogue-row input{font-size:12px;padding:6px 8px}
+.knowledge-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 30px;gap:8px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface-raised)}
+.knowledge-row>input,.knowledge-row>select:nth-of-type(3){grid-column:1/-1}
+.knowledge-row>button{grid-row:1;grid-column:3}
+.knowledge-row select,.knowledge-row input{font-size:12px;padding:6px 8px;min-width:0}
+.chip-row{display:flex;flex-wrap:wrap;gap:6px}
+.check-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border:1px solid var(--line);border-radius:14px;background:var(--surface);font-size:11px;cursor:pointer}
+.check-chip input{width:13px;height:13px;accent-color:var(--accent)}
+
+/* 右：校验 / 人物状态 / AI */
+.forge-right{gap:0;padding:0;border:0;border-radius:0;grid-template-rows:auto auto minmax(0,1fr);min-height:0}
+.forge-tabs{display:flex;gap:3px;padding:4px;border:1px solid var(--line);border-radius:8px;background:var(--surface-raised);min-width:0}
+.forge-tabs button{flex:1;border:0;background:transparent;color:var(--muted);font-size:12px;padding:7px 8px;border-radius:5px;white-space:nowrap}
+.forge-tabs button.active{background:var(--surface);color:var(--accent);font-weight:600;box-shadow:0 1px 4px #00000040}
+.forge-workspace-tabs{gap:24px;padding:0 20px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;overflow-x:auto}
+.forge-workspace-tabs button{flex:0 0 auto;padding:10px 0 12px;border-radius:0;border-bottom:2px solid transparent;font-size:13px}
+.forge-workspace-tabs button.active{box-shadow:none;border-bottom-color:var(--accent);background:transparent}
+
+.forge-right .issue-list{display:grid;gap:10px;max-height:none;overflow:visible}
+.issue-item{display:grid;gap:2px;padding:8px 10px;border:1px solid var(--line);border-left:3px solid var(--line);border-radius:8px;background:var(--surface)}
+.issue-item[data-level=error]{border-left-color:var(--red)}
+.issue-item[data-level=warn]{border-left-color:var(--accent)}
+.issue-item[data-level=info]{border-left-color:var(--line-strong)}
+.issue-item{text-align:left}
+.issue-item strong{font-size:12px}
+.issue-item p{margin:0;font-size:11px;line-height:1.65;color:var(--muted)}
+.issue-item small{font-size:10px;color:var(--muted)}
+.know-card{display:grid;gap:3px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.know-card strong{font-size:12px}
+.know-card small{font-size:11px;color:var(--muted)}
+
+.ai-grid{display:grid;gap:7px}
+.ai-button{display:block;width:100%;padding:9px 11px;text-align:left;border:1px solid var(--line);border-radius:9px;background:var(--surface);white-space:pre-line;line-height:1.55;font-size:12px;color:var(--ink)}
+.ai-button:hover:not(:disabled){border-color:var(--line-strong);background:var(--hover)}
+.ai-button.busy{border-color:var(--accent);background:var(--surface-raised);opacity:.75}
+.ai-action{display:grid;gap:1px;width:100%;padding:9px 11px;text-align:left;border:1px solid var(--line);border-radius:9px;background:var(--surface)}
+.ai-action:hover:not(:disabled){border-color:var(--line-strong);background:var(--hover)}
+.ai-action strong{font-size:12px}
+.ai-action small{font-size:10.5px;color:var(--muted);line-height:1.6}
+.ai-result,.ai-card{display:grid;gap:7px;padding:11px;border:1px solid var(--line);border-radius:9px;background:var(--surface-raised)}
+.ai-result h4,.ai-card h4{font-size:13px}
+.ai-result p,.ai-card p{margin:0;font-size:12px;line-height:1.7;color:var(--ink)}
+.ai-events{margin:0;padding-left:17px;display:grid;gap:5px}
+.ai-events li{font-size:11.5px;line-height:1.6}
+.ai-events strong{font-size:11.5px}
+.ai-events p{margin:1px 0 0;color:var(--muted)}
+.ai-issue{font-size:11.5px;line-height:1.6;padding:6px 9px;border-radius:7px;background:var(--surface-raised)}
+.ai-issue.error{background:var(--error-soft)}
+.ai-issue.warn{background:var(--accent-soft)}
+.ai-risk{font-size:11px;color:var(--red)}
+
+/* 剧集导航与独立工作页 */
+.forge-overview{display:grid;gap:16px}
+.forge-overview-episode{display:grid;gap:10px}
+.forge-overview-ephead{display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.forge-overview-ephead strong{font-size:14px;color:var(--accent)}
+.forge-overview-ephead small{margin-left:auto;font-size:11px}
+.forge-overview-list{display:grid;gap:9px}
+.forge-overview-row{display:grid;gap:9px;padding:13px 14px;border:1px solid var(--line);border-radius:9px;background:var(--surface);text-align:left;cursor:pointer}
+.forge-overview-row:hover{border-color:var(--line-strong);background:var(--hover)}
+.forge-overview-title{display:flex;align-items:center;gap:8px}
+.forge-overview-title strong{font-size:13px}
+.forge-overview-cells{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.85fr) minmax(0,.85fr) minmax(0,1.5fr);gap:14px;align-items:start}
+.forge-overview-cell{display:grid;gap:2px;min-width:0}
+.forge-overview-cell small{font-size:10px;color:var(--muted);letter-spacing:.02em}
+.forge-overview-cell p{margin:0;font-size:12px;line-height:1.6;color:var(--ink);overflow-wrap:anywhere}
+.forge-overview-dialogue{display:grid;gap:5px;padding-top:8px;border-top:1px dashed var(--line)}
+.forge-overview-dialogue>small{font-size:10.5px;color:var(--muted)}
+.forge-overview-line{display:flex;align-items:baseline;gap:8px;font-size:12px;line-height:1.6}
+.forge-overview-speaker{flex:0 0 auto;font-weight:600;color:var(--accent)}
+.forge-overview-tone{font-size:10.5px;color:var(--muted);font-style:italic}
+.forge-timeline{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px}
+.ep-chip{display:grid;gap:1px;flex:0 0 auto;min-width:56px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);text-align:center;position:relative}
+.ep-chip:hover:not(:disabled){border-color:var(--line-strong)}
+.ep-chip.empty{opacity:.52}
+.ep-chip.hard{border-color:var(--line);background:var(--surface-raised)}
+.ep-chip[aria-pressed=true]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.ep-chip-num{font-size:12px;font-weight:700;color:var(--accent)}
+.ep-chip-count{font-size:9.5px;color:var(--muted)}
+.ep-chip-dot{position:absolute;top:4px;right:4px;width:5px;height:5px;border-radius:50%;background:var(--red);display:block}
+.forge-episode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.episode-row{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);min-width:0}
+.episode-row strong{font-size:11.5px;color:var(--accent);white-space:nowrap}
+.episode-row .grow{display:grid;gap:0}
+.episode-row span{font-size:12px}
+.episode-row small{font-size:10.5px;color:var(--muted)}
+.debt-card{display:grid;gap:5px;padding:11px;border:1px solid var(--line);border-left:3px solid var(--line-strong);border-radius:9px;background:var(--surface)}
+.debt-card strong{font-size:12.5px}
+.debt-card p{margin:0;font-size:11.5px;line-height:1.65;color:var(--muted)}
+.debt-card small{font-size:10.5px;color:var(--muted)}
+.forge-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.forge-export-preview{max-height:52vh;font-size:12px;line-height:1.8;white-space:pre-wrap}
+
+@media(max-width:1800px){
+  .forge-shell{grid-template-columns:248px minmax(0,1fr) 390px;gap:12px}
+  .forge-stat{padding:0 12px;gap:7px}
+  .forge-stat small{display:none}
+  .forge-workspace-tabs{gap:18px}
+  .forge-hero-meta{gap:12px;flex-wrap:wrap}
+  .forge-updated{display:none}
+}
+@media(max-width:1400px){
+  .forge-content{height:auto;min-height:100dvh;overflow:visible}
+  .forge-workbench{height:auto;grid-template-rows:auto auto auto}
+  .forge-shell{grid-template-columns:1fr}
+  .forge-main{min-height:650px}
+  .forge-side-content{max-height:520px}
+  .forge-workspace-content.is-graph{min-height:550px}
+  .forge-overview-cells{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .forge-hero-top{flex-wrap:wrap;gap:16px}
+  .forge-hero-top>.grow{flex-basis:100%}
+  .forge-hero-actions{flex-wrap:wrap}
+  .forge-heading p{white-space:normal}
+  .forge-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .forge-stat{padding:7px 16px}
+  .forge-stat:nth-child(3){border-right:0}
+}
+@media(max-width:640px){
+  .forge-content{padding:16px}
+  .forge-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .forge-stat:nth-child(3){border-right:1px solid var(--line)}
+  .forge-stat:nth-child(2n){border-right:0}
+  .forge-project-switch{width:100%}
+  .forge-project-switch select{width:100%;min-width:0}
+  .forge-project-meta{white-space:normal}
+  .forge-grid-2{grid-template-columns:1fr}
+  .forge-workspace-tabs{gap:18px;padding:0 16px}
+  .forge-episode-grid{grid-template-columns:1fr}
+  .forge-overview-cells{grid-template-columns:1fr}
+}
+
+/* —— 剧本工作区全屏：只留中间的工作区，收起侧边栏、顶栏、页头、统计与左右两栏 —— */
+body.forge-fullscreen{height:100dvh;overflow:hidden}
+body.forge-fullscreen .sidebar,
+body.forge-fullscreen .forge-hero,
+body.forge-fullscreen .forge-stats,
+body.forge-fullscreen .forge-library,
+body.forge-fullscreen .forge-details{display:none}
+/* 高度链必须是「视口 → main → content → page → shell → workspace」全为确定值，
+   否则 .content 会被内容撑高，里面那层 overflow:auto 就没有可滚动的空间。 */
+body.forge-fullscreen .shell{grid-template-columns:minmax(0,1fr);height:100dvh;min-height:0;overflow:hidden}
+body.forge-fullscreen .main{height:100dvh;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+body.forge-fullscreen .content{flex:1;min-height:0;height:auto;max-width:none;padding:0;overflow:hidden;display:flex;flex-direction:column}
+body.forge-fullscreen .forge-page{height:100dvh;min-height:0;padding:0;gap:0;grid-template-rows:minmax(0,1fr)}
+body.forge-fullscreen .forge-shell{grid-template-columns:minmax(0,1fr);gap:0;min-height:0}
+body.forge-fullscreen .forge-main,
+body.forge-fullscreen .forge-workspace{min-height:0}
+body.forge-fullscreen .forge-workspace{border:0;border-radius:0}
+body.forge-fullscreen .forge-workspace-heading{padding:14px 22px 11px;border-bottom:1px solid var(--line);background:var(--surface)}
+body.forge-fullscreen .forge-workspace-tabs{padding:0 22px}
+body.forge-fullscreen .forge-workspace-content{padding:18px 22px}

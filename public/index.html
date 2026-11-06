@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <title>分镜资产工作台</title>
+  <link rel="stylesheet" href="/vendor/plyr/plyr.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/forge.css">
+  <!-- Plyr：粗剪预览里视频段落的播放器控件（本地文件，见 /vendor/plyr/README.md）。 -->
+  <script src="/vendor/plyr/plyr.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div id="app"><div class="loading-screen"><span class="loading-indicator" aria-hidden="true"></span><p>正在打开分镜资产工作台…</p></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <input id="import-file" type="file" accept=".md,.markdown,text/markdown,text/plain" hidden>
+</body>
+</html>

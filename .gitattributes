@@ -1,0 +1,2 @@
+# 示例分镜按原文计算来源哈希，克隆时保留 LF。
+examples/*.md text eol=lf

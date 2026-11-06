@@ -1,0 +1,14 @@
+{
+  "name": "storyboard-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "本机分镜资产、Codex 图片交付与 RunningHub 镜头管理",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node server/main.mjs",
+    "test": "node --test test/*.test.mjs",
+    "import": "node scripts/import-md.mjs"
+  },
+  "dependencies": { "express": "5.2.1", "https-proxy-agent": "5.0.1" }
+}

@@ -1,0 +1,40 @@
+node_modules/
+.workbuddy/
+*.log
+.env*
+!.env.example
+
+# 本机作品、媒体、制作结果与临时文件；只忽略，不删除。
+/data/
+/downloads/
+/output/
+/outputs/
+/production-prep/
+/projects/
+/tmp/
+/tmp.txt
+*.sqlite*
+*.db
+*.db-*
+
+# 凭据与本机密钥。
+*.dpapi
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 文档仅发布通用说明，保留本机作品截图和制作记录。
+/docs/*
+!/docs/实施方案.md
+!/docs/因果剧本工作台.md
+!/docs/提示词编写经验与避坑.md
+!/docs/MiniMax-H3-提示词指南.md
+!/docs/agent-rules-backup-20261103/
+
+# 含固定作品、任务或音色映射的本机制作脚本。
+/scripts/inspect-videos.mjs
+/scripts/merge-storyboards.mjs
+/scripts/submit-storyboards.mjs
+/scripts/tts-dialogue.mjs
+/scripts/wait-autoqueue.mjs
